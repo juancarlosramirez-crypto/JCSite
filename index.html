@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EcoHostales El Paraíso - Alojamiento turístico sostenible en la Ruta de las Flores, El Salvador. Reserva tu cabaña rodeada de naturaleza.">
+    <title>EcoHostales El Paraíso | Alojamiento Turístico en El Salvador</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- ==================== NAVBAR ==================== -->
+    <header class="navbar" id="navbar">
+        <div class="navbar__container">
+            <a href="#inicio" class="navbar__logo">
+                <i class="fa-solid fa-leaf"></i>
+                <span>EcoHostales</span>
+            </a>
+            <nav class="navbar__nav" id="navMenu">
+                <ul class="navbar__links">
+                    <li><a href="#inicio" class="navbar__link" data-section="inicio">Inicio</a></li>
+                    <li><a href="#nosotros" class="navbar__link" data-section="nosotros">Nosotros</a></li>
+                    <li><a href="#habitaciones" class="navbar__link" data-section="habitaciones">Habitaciones</a></li>
+                    <li><a href="#servicios" class="navbar__link" data-section="servicios">Servicios</a></li>
+                    <li><a href="#tarifas" class="navbar__link" data-section="tarifas">Tarifas</a></li>
+                    <li><a href="#galeria" class="navbar__link" data-section="galeria">Galería</a></li>
+                    <li><a href="#reservar" class="navbar__link navbar__link--cta" data-section="reservar">Reservar</a></li>
+                </ul>
+            </nav>
+            <div class="navbar__actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+                    <i class="fa-solid fa-moon" id="themeIcon"></i>
+                </button>
+                <button class="navbar__hamburger" id="hamburgerBtn" aria-label="Abrir menú">
+                    <span class="hamburger__line"></span>
+                    <span class="hamburger__line"></span>
+                    <span class="hamburger__line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- ==================== HERO ==================== -->
+    <section class="hero" id="inicio">
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+            <span class="hero__badge">Ruta de las Flores, El Salvador</span>
+            <h1 class="hero__title">Despierta en el Paraíso</h1>
+            <p class="hero__subtitle">
+                Cabañas ecológicas rodeadas de montañas, café y naturaleza. Vive una experiencia única de descanso y conexión con el entorno salvadoreño.
+            </p>
+            <div class="hero__buttons">
+                <a href="#reservar" class="btn btn--primary">
+                    Reservar Ahora <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="#habitaciones" class="btn btn--outline">
+                    Explorar Cabañas
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== NOSOTROS ==================== -->
+    <section class="nosotros section" id="nosotros">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Nuestra Historia</span>
+                <h2 class="section__title">Un Refugio entre Montañas</h2>
+                <p class="section__description">
+                    EcoHostales El Paraíso nació del sueño de compartir la belleza natural de El Salvador con viajeros que buscan una escapada auténtica y sostenible.
+                </p>
+            </div>
+            <div class="nosotros__grid">
+                <div class="nosotros__image">
+                    <img src="./img/cabañas.jpg" alt="Cabaña ecológica en El Salvador rodeada de vegetación tropical" loading="lazy">
+                    <div class="nosotros__image-badge">
+                        <i class="fa-solid fa-leaf"></i>
+                        <span>100% Sostenible</span>
+                    </div>
+                </div>
+                <div class="nosotros__content">
+                    <h3>Más que un hospedaje, una experiencia</h3>
+                    <p>
+                        Ubicados en el corazón de la Ruta de las Flores, nuestras cabañas están construidas con materiales locales y operan con energía solar. Cada rincón ha sido diseñado para ofrecerte comodidad sin dejar huella en el medio ambiente.
+                    </p>
+                    <p>
+                        Despierta con el canto de las aves, disfruta del café cultivado en nuestra propia finca y explora los senderos que serpentean entre cafetales y cascadas. Estamos comprometidos con el turismo responsable y el apoyo a las comunidades locales.
+                    </p>
+                    <div class="nosotros__stats">
+                        <div class="stat">
+                            <span class="stat__number" data-count="12">0</span>
+                            <span class="stat__label">Cabañas</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat__number" data-count="8">0</span>
+                            <span class="stat__label">Hectáreas</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat__number" data-count="5">0</span>
+                            <span class="stat__label">Años de Experiencia</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat__number" data-count="1200">0</span>
+                            <span class="stat__label">Huéspedes Felices</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== HABITACIONES DESTACADAS ==================== -->
+    <section class="habitaciones section section--alt" id="habitaciones">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Alojamientos</span>
+                <h2 class="section__title">Nuestras Cabañas</h2>
+                <p class="section__description">
+                    Cada cabaña tiene su propio carácter. Elige la que mejor se adapte a tu estilo de viaje.
+                </p>
+            </div>
+            <div class="habitaciones__grid">
+                <article class="habitacion-card">
+                    <div class="habitacion-card__image">
+                        <img src="./img/cabaña-deluxe.webp" alt="Cabaña Deluxe con jacuzzi privado" loading="lazy">
+                        <span class="habitacion-card__tag">Más Popular</span>
+                    </div>
+                    <div class="habitacion-card__body">
+                        <h3>Cabaña Deluxe</h3>
+                        <p>Amplia cabaña con jacuzzi privado, terraza panorámica y vista a las montañas. Ideal para parejas.</p>
+                        <ul class="habitacion-card__features">
+                            <li><i class="fa-solid fa-hot-tub"></i> Jacuzzi privado</li>
+                            <li><i class="fa-solid fa-mountain-sun"></i> Vista panorámica</li>
+                            <li><i class="fa-solid fa-wifi"></i> WiFi gratuito</li>
+                        </ul>
+                        <div class="habitacion-card__footer">
+                            <span class="habitacion-card__price">Desde <strong>$85</strong> / noche</span>
+                            <a href="#reservar" class="btn btn--sm btn--primary">Reservar</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="habitacion-card">
+                    <div class="habitacion-card__image">
+                        <img src="./img/cabañas-familiar.avif" alt="Cabaña Familiar espaciosa" loading="lazy">
+                        <span class="habitacion-card__tag habitacion-card__tag--family">Familiar</span>
+                    </div>
+                    <div class="habitacion-card__body">
+                        <h3>Cabaña Familiar</h3>
+                        <p>Dos habitaciones, sala de estar y cocina equipada. Perfecta para familias o grupos de amigos.</p>
+                        <ul class="habitacion-card__features">
+                            <li><i class="fa-solid fa-people-roof"></i> Hasta 6 personas</li>
+                            <li><i class="fa-solid fa-kitchen-set"></i> Cocina equipada</li>
+                            <li><i class="fa-solid fa-fire-burner"></i> Fogata exterior</li>
+                        </ul>
+                        <div class="habitacion-card__footer">
+                            <span class="habitacion-card__price">Desde <strong>$120</strong> / noche</span>
+                            <a href="#reservar" class="btn btn--sm btn--primary">Reservar</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="habitacion-card">
+                    <div class="habitacion-card__image">
+                        <img src="./img/glamping.jpg" alt="Domo Glamping experiencia única" loading="lazy">
+                        <span class="habitacion-card__tag habitacion-card__tag--new">Novedad</span>
+                    </div>
+                    <div class="habitacion-card__body">
+                        <h3>Domo Glamping</h3>
+                        <p>Vive la experiencia de acampar con todas las comodidades. Domo geodésico con cama king y baño privado.</p>
+                        <ul class="habitacion-card__features">
+                            <li><i class="fa-solid fa-star"></i> Cielo estrellado</li>
+                            <li><i class="fa-solid fa-shower"></i> Baño privado</li>
+                            <li><i class="fa-solid fa-mug-hot"></i> Desayuno incluido</li>
+                        </ul>
+                        <div class="habitacion-card__footer">
+                            <span class="habitacion-card__price">Desde <strong>$65</strong> / noche</span>
+                            <a href="#reservar" class="btn btn--sm btn--primary">Reservar</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SERVICIOS ==================== -->
+    <section class="servicios section" id="servicios">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Servicios</span>
+                <h2 class="section__title">Todo lo que Ofrecemos</h2>
+                <p class="section__description">
+                    Nos aseguramos de que tu estancia sea cómoda, placentera y llena de momentos inolvidables.
+                </p>
+            </div>
+            <div class="servicios__grid">
+                <div class="servicio-card">
+                    <div class="servicio-card__icon">
+                        <i class="fa-solid fa-wifi"></i>
+                    </div>
+                    <h3>WiFi de Alta Velocidad</h3>
+                    <p>Conexión estable en todas las cabañas y áreas comunes para que puedas trabajar o compartir tus momentos.</p>
+                </div>
+                <div class="servicio-card">
+                    <div class="servicio-card__icon">
+                        <i class="fa-solid fa-person-swimming"></i>
+                    </div>
+                    <h3>Piscina Natural</h3>
+                    <p>Disfruta de nuestra piscina alimentada por manantial, rodeada de jardines tropicales y hamacas.</p>
+                </div>
+                <div class="servicio-card">
+                    <div class="servicio-card__icon">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+                    <h3>Restaurante Campestre</h3>
+                    <p>Gastronomía salvadoreña con ingredientes frescos de nuestra huerta orgánica. Pupusas, café de altura y más.</p>
+                </div>
+                <div class="servicio-card">
+                    <div class="servicio-card__icon">
+                        <i class="fa-solid fa-spa"></i>
+                    </div>
+                    <h3>Spa & Bienestar</h3>
+                    <p>Masajes relajantes, yoga al amanecer y tratamientos con productos naturales para renovar cuerpo y mente.</p>
+                </div>
+                <div class="servicio-card">
+                    <div class="servicio-card__icon">
+                        <i class="fa-solid fa-person-hiking"></i>
+                    </div>
+                    <h3>Senderos Guiados</h3>
+                    <p>Explora cascadas escondidas y cafetales con nuestros guías locales. Tours disponibles todos los días.</p>
+                </div>
+                <div class="servicio-card">
+                    <div class="servicio-card__icon">
+                        <i class="fa-solid fa-paw"></i>
+                    </div>
+                    <h3>Pet Friendly</h3>
+                    <p>Tus mascotas son bienvenidas. Contamos con áreas especiales para que ellos también disfruten de la naturaleza.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TARIFAS ==================== -->
+    <section class="tarifas section section--alt" id="tarifas">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Tarifas</span>
+                <h2 class="section__title">Planes y Paquetes</h2>
+                <p class="section__description">
+                    Encuentra la opción perfecta para tu escapada. Todos los precios incluyen impuestos.
+                </p>
+            </div>
+            <div class="tarifas__grid">
+                <div class="tarifa-card">
+                    <div class="tarifa-card__header">
+                        <h3>Escapada Romántica</h3>
+                        <div class="tarifa-card__price">
+                            <span class="tarifa-card__currency">$</span>85
+                            <span class="tarifa-card__period">/ noche</span>
+                        </div>
+                    </div>
+                    <div class="tarifa-card__body">
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i> Cabaña Deluxe para 2</li>
+                            <li><i class="fa-solid fa-check"></i> Desayuno incluido</li>
+                            <li><i class="fa-solid fa-check"></i> Botella de vino de bienvenida</li>
+                            <li><i class="fa-solid fa-check"></i> Jacuzzi privado</li>
+                            <li><i class="fa-solid fa-check"></i> Late check-out</li>
+                        </ul>
+                    </div>
+                    <div class="tarifa-card__footer">
+                        <a href="#reservar" class="btn btn--primary btn--block">Elegir Plan</a>
+                    </div>
+                </div>
+                <div class="tarifa-card tarifa-card--featured">
+                    <div class="tarifa-card__badge">Más Vendido</div>
+                    <div class="tarifa-card__header">
+                        <h3>Aventura Familiar</h3>
+                        <div class="tarifa-card__price">
+                            <span class="tarifa-card__currency">$</span>120
+                            <span class="tarifa-card__period">/ noche</span>
+                        </div>
+                    </div>
+                    <div class="tarifa-card__body">
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i> Cabaña Familiar (hasta 6)</li>
+                            <li><i class="fa-solid fa-check"></i> Desayuno buffet incluido</li>
+                            <li><i class="fa-solid fa-check"></i> Tour guiado a cascadas</li>
+                            <li><i class="fa-solid fa-check"></i> Fogata nocturna</li>
+                            <li><i class="fa-solid fa-check"></i> Kit de bienvenida para niños</li>
+                        </ul>
+                    </div>
+                    <div class="tarifa-card__footer">
+                        <a href="#reservar" class="btn btn--primary btn--block">Elegir Plan</a>
+                    </div>
+                </div>
+                <div class="tarifa-card">
+                    <div class="tarifa-card__header">
+                        <h3>Experiencia Glamping</h3>
+                        <div class="tarifa-card__price">
+                            <span class="tarifa-card__currency">$</span>65
+                            <span class="tarifa-card__period">/ noche</span>
+                        </div>
+                    </div>
+                    <div class="tarifa-card__body">
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i> Domo geodésico para 2</li>
+                            <li><i class="fa-solid fa-check"></i> Desayuno incluido</li>
+                            <li><i class="fa-solid fa-check"></i> Observación de estrellas</li>
+                            <li><i class="fa-solid fa-check"></i> Baño privado</li>
+                            <li><i class="fa-solid fa-check"></i> Fogata privada</li>
+                        </ul>
+                    </div>
+                    <div class="tarifa-card__footer">
+                        <a href="#reservar" class="btn btn--primary btn--block">Elegir Plan</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== GALERÍA ==================== -->
+    <section class="galeria section" id="galeria">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Galería</span>
+                <h2 class="section__title">Descubre El Paraíso</h2>
+                <p class="section__description">
+                    Un vistazo a los rincones que harán de tu estancia una experiencia inolvidable.
+                </p>
+            </div>
+            <div class="galeria__grid">
+                <div class="galeria__item" data-full="./img/tardecer.avif">
+                    <img src="./img/tardecer.avif" alt="Vista exterior de cabaña ecológica" loading="lazy">
+                    <div class="galeria__overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="galeria__item" data-full="./img/piscina2.jpg">
+                    <img src="./img/piscina2.jpg" alt="Interior acogedor de cabaña" loading="lazy">
+                    <div class="galeria__overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="galeria__item" data-full="./img/glamping.jpg">
+                    <img src="./img/glamping.jpg" alt="Domo glamping al atardecer" loading="lazy">
+                    <div class="galeria__overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="galeria__item" data-full="./img/piscina.jpg">
+                    <img src="./img/piscina.jpg" alt="Piscina natural rodeada de jardines" loading="lazy">
+                    <div class="galeria__overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="galeria__item" data-full="./img/terraza.jpg">
+                    <img src="./img/terraza.jpg" alt="Terraza con vista a la montaña" loading="lazy">
+                    <div class="galeria__overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="galeria__item" data-full="./img/cabaña.jpg">
+                    <img src="./img/cabaña.jpg" alt="Jacuzzi privado en cabaña Deluxe" loading="lazy">
+                    <div class="galeria__overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TESTIMONIOS ==================== -->
+    <section class="testimonios section section--alt" id="testimonios">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Testimonios</span>
+                <h2 class="section__title">Lo que Dicen Nuestros Huéspedes</h2>
+            </div>
+            <div class="testimonios__grid">
+                <article class="testimonio-card">
+                    <div class="testimonio-card__stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testimonio-card__text">"Una experiencia mágica. Despertar con el sonido de la naturaleza y tomar café recién hecho en la terraza fue exactamente lo que necesitábamos. ¡Volveremos sin duda!"</p>
+                    <div class="testimonio-card__author">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80" alt="María Gómez" loading="lazy">
+                        <div>
+                            <strong>María Gómez</strong>
+                            <span>San Salvador</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="testimonio-card">
+                    <div class="testimonio-card__stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testimonio-card__text">"El domo glamping superó todas nuestras expectativas. Ver las estrellas desde la cama fue algo que nunca olvidaremos. El personal es increíblemente atento."</p>
+                    <div class="testimonio-card__author">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80" alt="Carlos Rivera" loading="lazy">
+                        <div>
+                            <strong>Carlos Rivera</strong>
+                            <span>Santa Ana</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="testimonio-card">
+                    <div class="testimonio-card__stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p class="testimonio-card__text">"Viajamos con nuestros dos hijos y la cabaña familiar fue perfecta. La fogata nocturna y los senderos fueron lo favorito de los niños. Altamente recomendado."</p>
+                    <div class="testimonio-card__author">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80" alt="Ana Martínez" loading="lazy">
+                        <div>
+                            <strong>Ana Martínez</strong>
+                            <span>San Miguel</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FAQ ==================== -->
+    <section class="faq section" id="faq">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">FAQ</span>
+                <h2 class="section__title">Preguntas Frecuentes</h2>
+            </div>
+            <div class="faq__list">
+                <div class="faq__item">
+                    <button class="faq__question" aria-expanded="false">
+                        <span>¿Cuál es el horario de check-in y check-out?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq__answer">
+                        <p>El check-in es a partir de las 3:00 PM y el check-out es hasta las 12:00 PM. Ofrecemos late check-out sujeto a disponibilidad sin costo adicional para nuestros huéspedes.</p>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <button class="faq__question" aria-expanded="false">
+                        <span>¿Aceptan mascotas?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq__answer">
+                        <p>¡Sí! Somos un alojamiento pet friendly. Aceptamos mascotas en todas nuestras cabañas. Contamos con áreas verdes donde pueden correr libremente. Aplican algunas restricciones para seguridad de todos los huéspedes.</p>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <button class="faq__question" aria-expanded="false">
+                        <span>¿Qué actividades hay cerca?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq__answer">
+                        <p>Estamos en la Ruta de las Flores, por lo que hay muchas actividades cercanas: visitas a fincas de café, cascadas, mercados de artesanías, recorridos en bicicleta de montaña, y los pueblos coloridos como Ataco, Juayúa y Apaneca.</p>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <button class="faq__question" aria-expanded="false">
+                        <span>¿Ofrecen transporte desde el aeropuerto?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq__answer">
+                        <p>Sí, ofrecemos servicio de transporte desde el Aeropuerto Internacional de El Salvador por un costo adicional. El viaje dura aproximadamente 2 horas. Contáctanos para coordinar tu traslado.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FORMULARIO DE RESERVACIÓN ==================== -->
+    <section class="reservar section section--alt" id="reservar">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Reservar</span>
+                <h2 class="section__title">Reserva tu Estancia</h2>
+                <p class="section__description">
+                    Completa el formulario y nos pondremos en contacto para confirmar tu reservación.
+                </p>
+            </div>
+            <div class="reservar__layout">
+                <aside class="reservar__info">
+                    <h3>Información de Reserva</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-calendar-check"></i> Reserva mínima: 1 noche</li>
+                        <li><i class="fa-solid fa-credit-card"></i> Se requiere 30% de anticipo</li>
+                        <li><i class="fa-solid fa-ban"></i> Cancelación gratuita hasta 48h antes</li>
+                        <li><i class="fa-solid fa-clock"></i> Check-in: 3:00 PM</li>
+                        <li><i class="fa-solid fa-clock"></i> Check-out: 12:00 PM</li>
+                        <li><i class="fa-solid fa-children"></i> Niños menores de 5 años: gratis</li>
+                    </ul>
+                    <div class="reservar__contacto">
+                        <h4>¿Prefieres reservar por teléfono?</h4>
+                        <a href="tel:+50322222222"><i class="fa-solid fa-phone"></i> +503 2450-3344</a>
+                        <a href="mailto:reservas@ecohostales.com.sv"><i class="fa-solid fa-envelope"></i> reservas@ecocabanas.com.sv</a>
+                    </div>
+                </aside>
+                <form class="reservar__form" id="reservaForm" novalidate>
+                    <div class="form__group">
+                        <label for="nombre">Nombre Completo *</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre completo" required>
+                        <span class="form__error" id="nombreError"></span>
+                    </div>
+                    <div class="form__row">
+                        <div class="form__group">
+                            <label for="email">Correo Electrónico *</label>
+                            <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                            <span class="form__error" id="emailError"></span>
+                        </div>
+                        <div class="form__group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="+503 0000-0000">
+                            <span class="form__error" id="telefonoError"></span>
+                        </div>
+                    </div>
+                    <div class="form__row">
+                        <div class="form__group">
+                            <label for="fechaIngreso">Fecha de Ingreso *</label>
+                            <input type="date" id="fechaIngreso" name="fechaIngreso" required>
+                            <span class="form__error" id="fechaIngresoError"></span>
+                        </div>
+                        <div class="form__group">
+                            <label for="fechaSalida">Fecha de Salida *</label>
+                            <input type="date" id="fechaSalida" name="fechaSalida" required>
+                            <span class="form__error" id="fechaSalidaError"></span>
+                        </div>
+                    </div>
+                    <div class="form__row">
+                        <div class="form__group">
+                            <label for="huespedes">Número de Huéspedes *</label>
+                            <select id="huespedes" name="huespedes" required>
+                                <option value="">Selecciona...</option>
+                                <option value="1">1 persona</option>
+                                <option value="2">2 personas</option>
+                                <option value="3">3 personas</option>
+                                <option value="4">4 personas</option>
+                                <option value="5">5 personas</option>
+                                <option value="6">6 personas</option>
+                            </select>
+                            <span class="form__error" id="huespedesError"></span>
+                        </div>
+                        <div class="form__group">
+                            <label for="habitacion">Tipo de Habitación *</label>
+                            <select id="habitacion" name="habitacion" required>
+                                <option value="">Selecciona...</option>
+                                <option value="deluxe">Cabaña Deluxe</option>
+                                <option value="familiar">Cabaña Familiar</option>
+                                <option value="glamping">Domo Glamping</option>
+                            </select>
+                            <span class="form__error" id="habitacionError"></span>
+                        </div>
+                    </div>
+                    <div class="form__group">
+                        <label for="comentarios">Comentarios o Peticiones Especiales</label>
+                        <textarea id="comentarios" name="comentarios" rows="3" placeholder="Cuéntanos si tienes alguna necesidad especial..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--block btn--lg">
+                        <i class="fa-solid fa-paper-plane"></i> Enviar Reservación
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== UBICACIÓN ==================== -->
+    <section class="ubicacion section" id="ubicacion">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Ubicación</span>
+                <h2 class="section__title">Encuéntranos</h2>
+                <p class="section__description">
+                    Estamos ubicados en la Ruta de las Flores, a solo 5 minutos de Juayúa.
+                </p>
+            </div>
+            <div class="ubicacion__mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31010.482202935423!2d-89.745!3d13.845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDUwJzQyLjAiTiA4OcKwNDQnNDIuMCJX!5e0!3m2!1ses!2ssv!4v1690000000000" width="100%" height="400" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación de EcoHostales El Paraíso en la Ruta de las Flores, El Salvador"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== MODAL DE GALERÍA ==================== -->
+    <div class="modal" id="galeriaModal">
+        <button class="modal__close" id="modalClose" aria-label="Cerrar modal">&times;</button>
+        <img src="" alt="Imagen ampliada" class="modal__image" id="modalImage">
+        <button class="modal__prev" id="modalPrev" aria-label="Imagen anterior"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="modal__next" id="modalNext" aria-label="Imagen siguiente"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+
+    <!-- ==================== MODAL DE ÉXITO ==================== -->
+    <div class="modal modal--success" id="successModal">
+        <div class="modal__content">
+            <div class="modal__success-icon">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h3>¡Reservación Enviada con Éxito!</h3>
+            <p>Gracias por tu interés en EcoCabañas El Paraíso. Nos pondremos en contacto contigo en las próximas 24 horas para confirmar tu reservación.</p>
+            <p class="modal__success-details" id="successDetails"></p>
+            <button class="btn btn--primary" id="successClose">Entendido</button>
+        </div>
+    </div>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="#inicio" class="footer__logo">
+                        <i class="fa-solid fa-leaf"></i>
+                        <span>EcoHostales</span>
+                    </a>
+                    <p>Un refugio de paz en el corazón de la Ruta de las Flores. Conecta con la naturaleza y descubre la magia de El Salvador.</p>
+                    <div class="footer__social">
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer__links">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#habitaciones">Habitaciones</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#tarifas">Tarifas</a></li>
+                    </ul>
+                </div>
+                <div class="footer__links">
+                    <h4>Información</h4>
+                    <ul>
+                        <li><a href="#faq">Preguntas Frecuentes</a></li>
+                        <li><a href="#ubicacion">Ubicación</a></li>
+                        <li><a href="#reservar">Reservar</a></li>
+                       
+                    </ul>
+                </div>
+                <div class="footer__newsletter">
+                    <h4>Suscríbete</h4>
+                    <p>Recibe ofertas especiales y novedades directamente en tu correo.</p>
+                    <form class="footer__subscribe" id="subscribeForm">
+                        <input type="email" placeholder="tu@email.com" required>
+                        <button type="submit" class="btn btn--primary">Suscribir</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 EcoHostales El Paraíso. Todos los derechos reservados.</p>
+                <p> El Salvador <i class="fa-solid fa-leaf"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
